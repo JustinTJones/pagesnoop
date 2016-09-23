@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Snooper</title>
+  <style>
+    #responseDiv{ border: solid 1px #444; width: 80%; margin: 3em auto; }
+  </style>
+  <script src="jquery-2.2.1.js"></script>
+  <script src="ui.js"></script>
+  <script src="send.js"></script>
+  <link rel="stylesheet" media="all" href="styles.css">
+</head>
+<body>
+  <form id="form1">
+    <div class="formLine">
+      <label>
+        URL:&nbsp;
+        <input type="text" id="url1">
+      </label>
+      <button onclick="addField(this)" id="btnAddUrl">&nbsp;+&nbsp;</button>
+    </div>
+    <div class="formLine">
+      <label>
+        Tag:&nbsp;
+        <input type="text" id="t1"></label>
+        <button onclick="addField(this)" id="btnAddTag">&nbsp;+&nbsp;</button>
+    </div>
+    <div class="formLine">
+      <label>
+        Attribute:&nbsp;
+        <input type="text" id="a1">
+      </label>
+      <button onclick="addField(this)" id="btnAddAttr">&nbsp;+&nbsp;</button>
+    </div>
+    <button onclick="buildStr()">&nbsp;Go&nbsp;</button>
+  </form><br>
+  <div id="responseDiv">
+
+  </div>
+</body>
+</html>
